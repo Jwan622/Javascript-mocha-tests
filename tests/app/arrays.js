@@ -31,9 +31,7 @@ describe('arrays', function() {
     a.splice( 1, 0, 2 );
     a.push( 2 );
     a.push( 2 );
-
     var result = arraysAnswers.removeWithoutCopy(a, 2);
-
     expect(result).to.have.length(3);
     expect(result.join(' ')).to.eql('1 3 4');
 
